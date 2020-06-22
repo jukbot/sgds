@@ -5,26 +5,24 @@ permalink: /bootstrap-sgds/installation/
 
 ---
 
-<h3>Installation</h3>
+<h2>Installation</h2>
 
-{%- highlight scss -%}
-// This must be overridden if you want to use icons! See below for more details
-$sgds-font-path: "../../sgds/fonts";
+<hr>
 
-@charset 'UTF-8';
-@import "../../sgds/sass/sgds-customise/all";
-@import "../../sgds/sass/sgds-base/sgds-functions";
-@import "../../sgds/sass/sgds-base/sgds-derived-variables";
-@import "../../sgds/sass/sgds-base/sgds-mixins";
-@import "../../sgds/sass/sgds-base/sgds-controls";
+<h3>Include the bootstrap css and the SGDS standard components css into the <code>head</code> tag</h3>
 
-@import "../../sgds/sass/sgds-components/sgds-form";
-@import "../../sgds/sass/sgds-components/sgds-navbar";
-@import "../../sgds/sass/sgds-components/sgds-masthead";
-@import "../../sgds/sass/sgds-components/sgds-menu";
-@import "../../sgds/sass/sgds-components/sgds-button";
-@import "../../sgds/sass/sgds-components/sgds-footer";
+{%- highlight html -%}
+<head>
+    ...
 
-@import "../../sgds/sass/sgds-icons/all";
-{%- endhighlight -%}
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="https://www.designsystem.gov.sg/assets/custom-css/sd-components-bootstrap.css" />
+    ...
+</head>
+{% endhighlight %}
+
 

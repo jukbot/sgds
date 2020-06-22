@@ -1,9 +1,10 @@
 ---
 ---
+@charset 'UTF-8';
 // This must be overridden if you want to use icons! See below for more details
 $sgds-font-path: "../../../fonts";
 
-@charset 'UTF-8';
+
 @import "../../sgds/sass/sgds-customise/all";
 @import "../../sgds/sass/sgds-base/sgds-functions";
 @import "../../sgds/sass/sgds-base/sgds-derived-variables";
