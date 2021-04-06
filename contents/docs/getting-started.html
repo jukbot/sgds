@@ -1,19 +1,19 @@
 ---
-title: Getting Started
+title: Components
 layout: layout-sidenav
-permalink: /components/getting-started/
+permalink: /components/overview/
 redirect_from:
     - /components/
 ---
 
 <h2>Overview</h2>
-<p><a href="/components/installation">Installation</a></p>
+<p><a href="/get-started/installation/">Installation</a></p>
 <p>
-    <a href="/components/customise-sgds">Advanced customisation with Sass</a>
+    <a href="/get-started/customise-sgds">Advanced customisation with Sass</a>
 </p>
 <p>
     We highly recommend that you customise your site, by extending base SGDS
-    classes using separate CSS or <a href="/components/customise-sgds">Sass</a> files.
+    classes using separate CSS or <a href="/get-started/customise-sgds">Sass</a> files.
 </p>
 <p>
     This way, your site will automatically inherit non-conflicting fixes and
@@ -22,15 +22,15 @@ redirect_from:
 <p>
   Here are the items you’ll need:
   <ul>
-    <li><a href="/components/installation">Installation of SGDS</a>.</li>
-    <li><a href="/components/customise-sgds">Use advanced customisation with Sass</a>.</li>
+    <li><a href="/get-started/installation">Installation of SGDS</a>.</li>
+    <li><a href="/get-started/customise-sgds">Use advanced customisation with Sass</a>.</li>
   </ul>
 </p>
 <p>
   <b>Note:</b> Links that contain the
   <span class="sgds-tag is-rounded has-text-weight-semibold">JS</span>
   tags contain interactive elements that require
-  <a href="/components/installation">JavaScript</a>.
+  <a href="/get-started/installation">JavaScript</a>.
 </p>
 <p>
   If you are using a JavaScript framework, check out the framework-specific helper libraries:
@@ -73,18 +73,6 @@ redirect_from:
 
 <hr />
 
-<h3>Layout</h3>
-<p>
-  CSS classes are used for composing your site layout. Over here, you can also
-  find the breakpoints that we use for desktop and mobile devices.
-</p>
-
-<div class="row is-multiline is-mobile">
-    {% include component-list.html collectionName='layout' %}
-</div>
-
-<hr />
-
 <h3>General</h3>
 <p>
   Common components that can be used individually or grouped to form patterns
@@ -104,15 +92,4 @@ redirect_from:
 
 <div class="row is-multiline is-mobile">
         {% include component-list.html collectionName='form' %}
-</div>
-
-<hr class="margin--bottom--lg margin--top--lg" />
-
-<h3>Helpers</h3>
-<p>
-  Helper classes to help you alter the style of almost any component.
-</p>
-
-<div class="row is-multiline is-mobile margin--bottom--lg">
-    {% include component-list.html collectionName='helpers' %}
 </div>
