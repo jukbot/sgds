@@ -11,6 +11,7 @@ report_vulnerability: "https://tech.gov.sg/report_vulnerability"
 contact_us: "https://form.gov.sg/forms/govtech/5bc440ac507956000fdbae91"
 feedback_form: "https://form.gov.sg/#!/forms/govtech/5bd12c6668dbe7000fff9ace"
 search_placeholder: "What are you looking for?"
+installation_link: "/get-started/installation/"
 
 plugins:
   - jekyll-seo-tag
@@ -39,9 +40,13 @@ collections:
   utilities:
     permalink: /utilities/:path/
     output: true
+    order: 
+      - overview.html
   patterns:
     permalink: /patterns/:path/
     output: true
+    order: 
+      - overview.html
 
 exclude:
   - apps/src

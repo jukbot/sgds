@@ -37,7 +37,7 @@ Get collection that current page belongs to, then group each document by their s
             </ul>
         </li>
         {%- else -%}
-        {%- assign items = category.items | sort: "title" -%}
+        {%- assign items = category.items | sort: "order" -%}
         {%- for item in items -%}
                 {%- assign class = nil -%}
                 {%- if page.url contains item.url -%}
