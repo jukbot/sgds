@@ -3,3 +3,48 @@ title: Margin
 layout: layout-docs
 category : "Spaces"
 ---
+
+<h3>{{page.title}}</h3>
+<!-- <p>Replace <code>{{page.title | downcase}}</code> with <code>padding</code> in the table below to control padding.</p> -->
+<table class="table">
+  <thead>
+    <tr>
+      <td>Class</td>
+      <td>CSS Attribute</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>{{page.title | downcase}}</code></td>
+      <td><code>{{page.title | downcase}}: 1rem;</code></td>
+    </tr>
+    <tr>
+      <td><code>{{page.title | downcase}}--{size}</code></td>
+      <td>
+        <code>{{page.title | downcase}}: .25rem; (xs)</code><br />
+        <code>{{page.title | downcase}}: .5rem; (sm)</code><br />
+        <code>{{page.title | downcase}}: 2rem; (lg)</code><br />
+        <code>{{page.title | downcase}}: 4rem; (xl)</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>{{page.title | downcase}}--{direction}</code>
+      </td>
+      <td>
+          <code>{{page.title | downcase}}-top: 1rem; (top)</code><br />
+          <code>{{page.title | downcase}}-right: 1rem; (right)</code><br />
+          <code>{{page.title | downcase}}-bottom: 1rem; (bottom)</code><br />
+          <code>{{page.title | downcase}}-left: 1rem; (left)</code>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            <code>{{page.title | downcase}}--{direction}--{size}</code>
+        </td>
+        <td>
+            Combination as derived from above
+        </td>
+    </tr>
+  </tbody>
+</table>

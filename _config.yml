@@ -42,6 +42,11 @@ collections:
     output: true
     order: 
       - overview.html
+  templates:
+    permalink: /templates/:path/
+    output: true
+    order: 
+      - overview.html
   patterns:
     permalink: /patterns/:path/
     output: true
