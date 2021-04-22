@@ -2,6 +2,9 @@
     &-breadcrumb{
         &:not(:last-child){
             margin-bottom: 1rem;
+            @include until($desktop){
+                margin-bottom: 0.5rem;
+            }
         }
     }
 }
